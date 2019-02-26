@@ -141,7 +141,7 @@ void display(void)
 		gluLookAt(x,y,z_level,  at_x, at_y, at_z,  0,0,1);
 	}
 
-	glClear(GL_COLOR_BUFFER_BIT);
+	// glClear(GL_COLOR_BUFFER_BIT);
 	if (gMouseLeft){
 		mRat.spinLeft();
 	}
@@ -369,7 +369,7 @@ int main(int argc, char **argv)
 	srand(time(0));
 	glutInit(&argc, argv);
 
-	glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGB);
+	//glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGB);
 	glutInitWindowSize(screen_x, screen_y);
 	glutInitWindowPosition(50, 50);
 
